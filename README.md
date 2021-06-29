@@ -1,58 +1,37 @@
-# PROJECT NAME
-## By Usarneme/Tom
+# Portfolio
 
----
+### _By Kody Gordon_
+### _Planetary Age Calculator_
 
-### Project Description
+## Technologies
+* HTML
+* CSS
+* Javascript
+* Boostrap
+* jQuery
+* npm
+* webpack
+* Markdown
+* Jest
+* Github
+* Visual Studio Code
 
-This project is a web application that DESCRIPTION
----
-### Tech Stack
-1. HTML5+CSS3
-2. JavaScript/ES2018+
-3. jQuery
-4. Bootstrap
-5. webpack/webpack-cli/webpack dev server
-6. eslint
-7. babel transpiler
-8. Jest testing
----
+## Description
+This website was built to allow user to enter their age and calculate what your age would be on a different planet.
 
-### Project Build Available At:
+## Setup/Installation Requirement
+* [Portfolio](https://github.com/kody7mm/)
+* [Project Page](https://github.com/kody7mm/planetary-age)
+* Can be cloned from [repository](https://github.com/kody7mm/planetary-age)
 
-[BUILD URL](BUILD URL)
+## Specs
 
----
-### Installation Instructions
-1. Clone this repo: `git clone https://github.com/Usarneme/REPO URL`
-2. Enter new directory `cd REPO DIR`
-3. Install dependencies with `npm install`
-4. To run it locally, use the npm dev command `npm run start:dev`
-5. Open your web browser and navigate to http://localhost:9001
-6. For a production build, use `npm run build`
----
-### Known Issues:
-1. NO KNOWN ISSUES
-2. Please open a pull request if you have any issues!
----
-### Test Suite/Specification
+## Known Bugs
+* Design will be improved
+* Improvements to floating could be implemented after more experience and practice is had.
 
-> See also [the Jest Test File](TESTSURL) for Jest Test Suite which includes 14 passing tests. View Test Results from Project Directory by Running `yarn run test` or if you prefer npm `npm run test`
+## License
+[GPL](https://choosealicense.com/licenses/gpl-3.0/)
 
-```
-Describe: TESTS
-
-```
----
-### License is GPLv3 and I make no claim to copyright.
-<br />
-
-> You can't steal what is freely given. Enjoy!
-
-<br />
-<br />
-<br />
-<br />
-<p align="center">
-  <small>Made with ❤️ in Portland, Oregon. </small>
-</p>
+## Contact Information
+Kody Gordon (gordon.km89@gmail.com)
