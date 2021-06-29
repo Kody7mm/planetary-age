@@ -14,3 +14,12 @@ describe('Person class constructor', () => {
     expect(person.gender).toEqual('Male');
     expect(person.activityLevel).toEqual('Activity');
   })
+
+  test('should correctly construct a person with a galaxy ages object', () => {
+    expect(typeof(person.planetaryAges)).toEqual('object');
+  });
+
+  test('should correctly construct a person with a galaxy life expectancies object', () => {
+    expect(typeof(person.galaxyLifeExpectancies)).toEqual('object');
+  });
+});
