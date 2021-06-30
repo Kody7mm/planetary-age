@@ -29,3 +29,14 @@ describe('Person.getGalacticAge()', () => {
     expect(person.getGalacticAge('Mercury')).toEqual('You are 125 years old on Mercury.');
   });
 });
+
+describe('Person.getEarthLifeExpectancy()', () => {
+  test('should correctly set an earth-age life expectancy if male and activity', () => {
+    expect(person.getEarthLifeExpectancy()).toEqual(73.1);
+  });
+
+  test('should correctly set an earth-age life expectancy if not male and activity', () => {
+    let nonMale = new Person(30);
+    expect(nonMale.getEarthLifeExpectancy()).toEqual(81.1);
+  });
+});
