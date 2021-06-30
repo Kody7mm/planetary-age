@@ -65,3 +65,8 @@ describe('Person.setGalaxyLifeExpectancies()', () => {
     expect(galaxyLifeExpectancies['Earth']).toEqual(73.1);
   });
 });
+
+describe('Person.getGalaxyLifeExpectancy()', () => {
+  test('should correctly return a life expectancy on a given planet', () => {
+    expect(person.getGalaxyLifeExpectancy('Mercury')).toEqual('Based on your gender and activity level, on Mercury you will live 180 more years.');
+  });
