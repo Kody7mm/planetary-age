@@ -24,11 +24,29 @@ describe('Person class constructor', () => {
   });
 });
 
-describe('Person.getGalacticAge()', () => {
-  test('should correctly return the age of the user on a given planet', () => {
-    expect(person.getGalacticAge('Mercury')).toEqual('You are 125 years old on Mercury.');
+describe('Person.setGalaxyAges()', () => {
+  test('should correctly calc age on Mercury and add to galaxyAges', () => {
+    person.setGalaxyAges();
+    expect(person.galaxyAges['Mercury']).toBeCloseTo(125);
+  });
+
+  test('should correctly calc age on Venus and add to galaxyAges', () => {
+    person.setGalaxyAges();
+    expect(person.galaxyAges['Venus']).toBeCloseTo(48.387);
+  });
+
+  test('should correctly calc age on Mars and Jupiter and add to galaxyAges', () => {
+    person.setGalaxyAges();
+    expect(person.galaxyAges['Mars']).toBeCloseTo(15.957);
+    expect(person.galaxyAges['Jupiter']).toBeCloseTo(2.53);
   });
 });
+
+describe('Person.getGalaxyAge()', () => {
+  test('should correctly return the age of the user on a given planet', () => {
+    person.setGalaxyAges();
+    expect(person.getGalaxyAge('Mercury')).toEqual('You are 125 years old on Mercury.');
+  });
 
 describe('Person.getEarthLifeExpectancy()', () => {
   test('should correctly set an earth-age life expectancy if male and activity', () => {
