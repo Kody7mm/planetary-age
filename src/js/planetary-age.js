@@ -21,3 +21,36 @@ export default class Person {
     }
     return converted;
   }
+
+  setGalaxyAges() {
+    return this.convertSolarYears(this.earthAge);
+  }
+
+  getGalaxyAge(planet) {
+    return `You are ${Math.round(this.galaxyAges[planet])} years old on ${planet}.`;
+  }
+
+  getEarthLifeExpectancy() {
+    let earthLifeExpectancy = 81.1;
+    if (this.gender === 'Male') {
+      earthLifeExpectancy -= 5;
+    }
+    if (this.activityLevel === 'Activity') {
+      earthLifeExpectancy -= 3;
+    }
+    return earthLifeExpectancy;
+  }
+
+  setGalaxyLifeExpectancies() {
+    return this.convertSolarYears(this.getEarthLifeExpectancy());
+  }
+
+  getGalaxyLifeExpectancy(planet) {
+    const yearsToLive =  Math.round(this.galaxyLifeExpectancies[planet] - this.galaxyAges[planet]);
+    if (yearsToLive >= 0) {
+      return `Based on your gender and activity level, on ${planet} you will live approximately ${yearsToLive} more years.`;
+    } else {
+      return `Based on your gender and activity level, you have outlived your life expectancy on ${planet} by ${Math.abs(yearsToLive)} years.`;
+    }
+  }
+}
