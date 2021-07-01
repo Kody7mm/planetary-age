@@ -27,10 +27,10 @@ This website was built to allow user to enter their age and calculate what your 
 ## Setup and Installation
 * **Clone the repository** to a local directory using the command-line tool `git` ([how to install git](https://www.learnhowtoprogram.com/introduction-to-programming/getting-started-with-intro-to-programming/git-and-github)).  
   `$ cd ~/[directory]/[path]/[of]/[choice]/`  
-  `$ git clone https://github.com/MicahOlson/galactic-age.git`  
+  `$ git clone https://github.com/kody7mm/planetary-age.git`  
 
 * **Navigate into the project** using `cd` to move to the top level of the project directory.  
-  `$ cd galactic-age/`   
+  `$ cd planetary-age/`   
 
 * **Install all application dependencies** using the `Node.js` package manager `npm`. You will need `Node.js` to be able to use `npm` ([how to install node and npm](https://www.learnhowtoprogram.com/intermediate-javascript/getting-started-with-javascript/installing-node-js)).  
   `$ npm install`
